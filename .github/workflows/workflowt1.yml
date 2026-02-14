@@ -1,0 +1,13 @@
+name: workflow try 1
+
+on: 
+  push: 
+    branches:
+      - main
+jobs:
+  try1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: "first step"
+        run: echo "this work flow is working"
